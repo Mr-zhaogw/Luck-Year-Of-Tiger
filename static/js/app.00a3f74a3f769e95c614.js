@@ -14,6 +14,13 @@ module.exports = __webpack_require__.p + "static/img/logo.2caad46.png";
 
 /***/ }),
 
+/***/ "9epy":
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "NHnr":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -155,14 +162,14 @@ var Component = normalizeComponent(
     Nav: src_components_nav
   }
 });
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-878fdb1c","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./src/App.vue
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-54ceb6e0","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./src/App.vue
 var App_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{attrs:{"id":"app"}},[_c('Nav'),_vm._v(" "),_c('router-view')],1)}
 var App_staticRenderFns = []
 var App_esExports = { render: App_render, staticRenderFns: App_staticRenderFns }
 /* harmony default export */ var selectortype_template_index_0_src_App = (App_esExports);
 // CONCATENATED MODULE: ./src/App.vue
 function App_injectStyle (ssrContext) {
-  __webpack_require__("lZRW")
+  __webpack_require__("9epy")
 }
 var App_normalizeComponent = __webpack_require__("VU/8")
 /* script */
@@ -407,13 +414,6 @@ module.exports = __webpack_require__.p + "static/img/logo1.a5c9e53.png";
 
 /***/ }),
 
-/***/ "lZRW":
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
 /***/ "mCmD":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -429,4 +429,4 @@ module.exports = __webpack_require__.p + "static/img/logo2.5403d1f.png";
 /***/ })
 
 },["NHnr"]);
-//# sourceMappingURL=app.157f1fca84528c670e17.js.map
+//# sourceMappingURL=app.00a3f74a3f769e95c614.js.map
