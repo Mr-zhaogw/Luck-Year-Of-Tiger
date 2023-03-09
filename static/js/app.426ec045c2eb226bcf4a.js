@@ -7,14 +7,14 @@ module.exports = __webpack_require__.p + "static/img/logo.2caad46.png";
 
 /***/ }),
 
-/***/ "8k5O":
+/***/ "9epy":
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ "9epy":
+/***/ "HLDo":
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
@@ -77,7 +77,7 @@ var vue_esm = __webpack_require__("7+uW");
         if (index == 0) {
           this.$router.push({ path: '/mint' });
         } else if (index == 1) {
-          this.$router.push({ path: '/' });
+          this.$router.push({ path: '/' }, function () {});
           this.$nextTick(function () {
             document.querySelector(".part2").scrollIntoView({
               behavior: "smooth",
@@ -85,7 +85,7 @@ var vue_esm = __webpack_require__("7+uW");
             });
           });
         } else if (index == 2) {
-          this.$router.push({ path: '/' });
+          this.$router.push({ path: '/' }, function () {});
           this.$nextTick(function () {
             document.querySelector(".part3").scrollIntoView({
               behavior: "smooth",
@@ -107,19 +107,19 @@ var vue_esm = __webpack_require__("7+uW");
             block: "start"
           });
         }
-        this.$router.push({ path: path });
+        this.$router.push({ path: path }, function () {});
       }
     }
   }
 });
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-e7d61fd2","hasScoped":true,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./src/components/nav.vue
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-843e7aa2","hasScoped":true,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./src/components/nav.vue
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"header fn-clear"},[_c('img',{staticClass:"logo",attrs:{"src":__webpack_require__("7Otq")},on:{"click":_vm.goHome}}),_vm._v(" "),_c('ul',{staticClass:"nav"},_vm._l((_vm.navList),function(item,index){return _c('li',{on:{"click":function($event){return _vm.goNav(index)}}},[_vm._v(_vm._s(item))])}),0),_vm._v(" "),_vm._m(0)])}
 var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"icon_box"},[_c('img',{staticClass:"icon1 icon",attrs:{"src":__webpack_require__("TrFT")}}),_vm._v(" "),_c('img',{staticClass:"icon2 icon",attrs:{"src":__webpack_require__("xAza")}}),_vm._v(" "),_c('a',{attrs:{"href":"https://twitter.com/LYOTNFT"}},[_c('img',{staticClass:"icon3 icon",attrs:{"src":__webpack_require__("mCmD")}})])])}]
 var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ var components_nav = (esExports);
 // CONCATENATED MODULE: ./src/components/nav.vue
 function injectStyle (ssrContext) {
-  __webpack_require__("8k5O")
+  __webpack_require__("HLDo")
 }
 var normalizeComponent = __webpack_require__("VU/8")
 /* script */
@@ -132,7 +132,7 @@ var __vue_template_functional__ = false
 /* styles */
 var __vue_styles__ = injectStyle
 /* scopeId */
-var __vue_scopeId__ = "data-v-e7d61fd2"
+var __vue_scopeId__ = "data-v-843e7aa2"
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
@@ -429,4 +429,4 @@ module.exports = __webpack_require__.p + "static/img/logo2.5403d1f.png";
 /***/ })
 
 },["NHnr"]);
-//# sourceMappingURL=app.00a3f74a3f769e95c614.js.map
+//# sourceMappingURL=app.426ec045c2eb226bcf4a.js.map

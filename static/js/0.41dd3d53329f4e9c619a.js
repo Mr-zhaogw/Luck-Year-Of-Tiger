@@ -31030,7 +31030,7 @@ var _name$components$data;
                         case 10:
                             networkId = _context2.sent;
 
-                            if (!(networkId !== '1')) {
+                            if (!(networkId !== '5')) {
                                 _context2.next = 23;
                                 break;
                             }
@@ -31051,7 +31051,7 @@ var _name$components$data;
                             _context2.prev = 18;
                             _context2.t0 = _context2['catch'](12);
 
-                            _this3.$swal('请手动切换到以太坊主网');
+                            _this3.$swal('Please switch to the mainnet');
 
                         case 21:
                             _context2.next = 24;
@@ -31074,7 +31074,6 @@ var _name$components$data;
         var rpc = "https://goerli.infura.io/v3/0260453284fb4be8abb9815c5c116726";
         var provider = new ethers_namespaceObject.providers.JsonRpcProvider(rpc);
         var contract = new ethers_namespaceObject.Contract(contractAddress, contractAbi, provider);
-        console.log(contractAddress);
         var promises = [contract.totalSupply(), contract.currentStage(), contract.whiteListPrice(), contract.publicPrice()];
         this.isLoading = true;
         promise_default.a.all(promises).then(function (results) {
@@ -31162,7 +31161,7 @@ var _name$components$data;
                             _this5.isLoading = false;
                             _this5.isSuccess = true;
                             _this5.showDialog();
-                            _context3.next = 34;
+                            _context3.next = 35;
                             break;
 
                         case 30:
@@ -31170,9 +31169,10 @@ var _name$components$data;
                             _context3.t0 = _context3['catch'](1);
 
                             _this5.isLoading = false;
-                            _this5.$swal(_context3.t0.message || _context3.t0);
+                            console.log(_context3.t0.message);
+                            _this5.$swal('insufficient funds');
 
-                        case 34:
+                        case 35:
                         case 'end':
                             return _context3.stop();
                     }
@@ -31204,7 +31204,7 @@ var _name$components$data;
         }
     }
 }), _name$components$data);
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-e6267f32","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./src/components/pages/mint/index.vue
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-baec13b8","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./src/components/pages/mint/index.vue
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticStyle:{"padding-top":".5rem"},attrs:{"calss":"mint_page"}},[_c('div',{staticClass:"content_c"},[(_vm.isConnectWallet)?_c('div',{staticClass:"btn",on:{"click":_vm.connectWallet}},[_c('img',{attrs:{"src":__webpack_require__("+wVD")}})]):_vm._e(),_vm._v(" "),(_vm.isRequest && _vm.totalSupply > 0)?_c('div',{staticClass:"text"},[(!_vm.isConnectWallet && ((_vm.currentPhase == 0 && _vm.inFrenList) || (_vm.currentPhase == 1 && _vm.inWhiteList) || _vm.currentPhase == 2))?_c('div',{staticClass:"handle"},[_c('img',{staticClass:"subtract icon",attrs:{"src":__webpack_require__("EII3")},on:{"click":function($event){return _vm.hanlerNum(0)}}}),_vm._v(" "),_c('span',{staticClass:"num"},[_vm._v(_vm._s(_vm.num))]),_vm._v(" "),_c('img',{staticClass:"add icon",attrs:{"src":__webpack_require__("lQd5")},on:{"click":function($event){return _vm.hanlerNum(1)}}}),_vm._v(" "),_c('div',{staticClass:"mintBtn",on:{"click":_vm.buyMint}},[_c('img',{attrs:{"src":_vm.mintBtn}})])]):_vm._e(),_vm._v(" "),_c('div',{staticClass:"n"},[_vm._v("\n              MINT PRICE:"+_vm._s(_vm.mintPrice)+"ETH    "+_vm._s(_vm.totalSupply)+"/2022MINTED\n          ")])]):_vm._e(),_vm._v(" "),(_vm.isRequest && _vm.totalSupply == 0)?_c('div',{staticClass:"text soldout"},[_vm._v("\n          SOLD OUT!\n      ")]):_vm._e(),_vm._v(" "),(!_vm.isDialog)?_c('div',{staticClass:"qp"},[_c('img',{attrs:{"src":__webpack_require__("5aFt")}})]):_c('div',{staticClass:"dialog"},[(_vm.isSuccess)?_c('div',[_c('img',{staticClass:"d",attrs:{"src":__webpack_require__("HVnn")}})]):(_vm.currentPhase == 0)?_c('div',[(_vm.inFrenList)?_c('img',{staticClass:"d",attrs:{"src":__webpack_require__("5H6C")}}):_c('img',{staticClass:"d",attrs:{"src":__webpack_require__("53dc")}})]):_c('div',[(_vm.inWhiteList)?_c('img',{staticClass:"d",attrs:{"src":__webpack_require__("fdVw")}}):_c('img',{staticClass:"d",attrs:{"src":__webpack_require__("3SAf")}})])]),_vm._v(" "),_c('div',{staticClass:"bottom"},[_c('div',{staticClass:"t1 t container_words"},[_c('vue-seamless-scroll',{staticClass:"seamless-warp",attrs:{"data":_vm.newsList,"class-option":_vm.classOption}},[_c('ul',{staticClass:"item"},_vm._l((_vm.newsList),function(item){return _c('li',[_vm._v(_vm._s(item.title))])}),0)])],1),_vm._v(" "),_c('div',{staticClass:"t2 t container_big"},[_c('vue-seamless-scroll',{staticClass:"seamless-warp",attrs:{"data":_vm.newsList1,"class-option":_vm.classOption1}},[_c('ul',{staticClass:"item"},_vm._l((_vm.newsList1),function(item){return _c('li',[_vm._v(_vm._s(item.title))])}),0)])],1),_vm._v(" "),_c('div',{staticClass:"t3 t container_words"},[_c('vue-seamless-scroll',{staticClass:"seamless-warp",attrs:{"data":_vm.newsList,"class-option":_vm.classOption}},[_c('ul',{staticClass:"item"},_vm._l((_vm.newsList),function(item){return _c('li',[_vm._v(_vm._s(item.title))])}),0)])],1),_vm._v(" "),_c('img',{staticClass:"tiggy",attrs:{"src":__webpack_require__("rXwA")}})]),_vm._v(" "),(_vm.isLoading)?_c('div',{staticClass:"loading_"},[_vm._m(0)]):_vm._e()])])}
 var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{attrs:{"id":"preloader_4"}},[_c('span'),_vm._v(" "),_c('span'),_vm._v(" "),_c('span'),_vm._v(" "),_c('span'),_vm._v(" "),_c('span')])}]
 var esExports = { render: render, staticRenderFns: staticRenderFns }
@@ -32920,4 +32920,4 @@ __webpack_require__("vIB/")(String, 'String', function (iterated) {
 /***/ })
 
 });
-//# sourceMappingURL=0.228a645571df287e1ef3.js.map
+//# sourceMappingURL=0.41dd3d53329f4e9c619a.js.map
