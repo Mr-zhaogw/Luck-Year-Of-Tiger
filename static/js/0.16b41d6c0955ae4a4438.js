@@ -30774,8 +30774,8 @@ const {
 
 
 // CONCATENATED MODULE: ./src/assets/js/util.js
-var contractAddress = '0xfcdc65a447cfa4bf8c4f8641ea295a027771df4e';
-var contractAbi = [{ "inputs": [{ "internalType": "address", "name": "_multisig", "type": "address" }, { "internalType": "bytes32", "name": "_frenlistRoot", "type": "bytes32" }, { "internalType": "bytes32", "name": "_whitelistRoot", "type": "bytes32" }], "stateMutability": "nonpayable", "type": "constructor" }, { "inputs": [], "name": "ApprovalCallerNotOwnerNorApproved", "type": "error" }, { "inputs": [], "name": "ApprovalQueryForNonexistentToken", "type": "error" }, { "inputs": [], "name": "BalanceQueryForZeroAddress", "type": "error" }, { "inputs": [], "name": "MintERC2309QuantityExceedsLimit", "type": "error" }, { "inputs": [], "name": "MintToZeroAddress", "type": "error" }, { "inputs": [], "name": "MintZeroQuantity", "type": "error" }, { "inputs": [], "name": "OwnerQueryForNonexistentToken", "type": "error" }, { "inputs": [], "name": "OwnershipNotInitializedForExtraData", "type": "error" }, { "inputs": [], "name": "TransferCallerNotOwnerNorApproved", "type": "error" }, { "inputs": [], "name": "TransferFromIncorrectOwner", "type": "error" }, { "inputs": [], "name": "TransferToNonERC721ReceiverImplementer", "type": "error" }, { "inputs": [], "name": "TransferToZeroAddress", "type": "error" }, { "inputs": [], "name": "URIQueryForNonexistentToken", "type": "error" }, { "anonymous": false, "inputs": [{ "indexed": true, "internalType": "address", "name": "owner", "type": "address" }, { "indexed": true, "internalType": "address", "name": "approved", "type": "address" }, { "indexed": true, "internalType": "uint256", "name": "tokenId", "type": "uint256" }], "name": "Approval", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": true, "internalType": "address", "name": "owner", "type": "address" }, { "indexed": true, "internalType": "address", "name": "operator", "type": "address" }, { "indexed": false, "internalType": "bool", "name": "approved", "type": "bool" }], "name": "ApprovalForAll", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": true, "internalType": "uint256", "name": "fromTokenId", "type": "uint256" }, { "indexed": false, "internalType": "uint256", "name": "toTokenId", "type": "uint256" }, { "indexed": true, "internalType": "address", "name": "from", "type": "address" }, { "indexed": true, "internalType": "address", "name": "to", "type": "address" }], "name": "ConsecutiveTransfer", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": true, "internalType": "address", "name": "to", "type": "address" }, { "indexed": true, "internalType": "uint256", "name": "amount", "type": "uint256" }], "name": "Mint", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": true, "internalType": "address", "name": "previousOwner", "type": "address" }, { "indexed": true, "internalType": "address", "name": "newOwner", "type": "address" }], "name": "OwnershipTransferred", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": true, "internalType": "address", "name": "from", "type": "address" }, { "indexed": true, "internalType": "address", "name": "to", "type": "address" }, { "indexed": true, "internalType": "uint256", "name": "tokenId", "type": "uint256" }], "name": "Transfer", "type": "event" }, { "inputs": [], "name": "MAX_FREN_MINT", "outputs": [{ "internalType": "uint8", "name": "", "type": "uint8" }], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "MAX_PER_MINT", "outputs": [{ "internalType": "uint8", "name": "", "type": "uint8" }], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "MAX_SUPPLY", "outputs": [{ "internalType": "uint16", "name": "", "type": "uint16" }], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "TEAM_RESERVE", "outputs": [{ "internalType": "uint16", "name": "", "type": "uint16" }], "stateMutability": "view", "type": "function" }, { "inputs": [{ "internalType": "address[]", "name": "_to", "type": "address[]" }, { "internalType": "uint256", "name": "_amount", "type": "uint256" }], "name": "adminAirdrop", "outputs": [], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [{ "internalType": "address", "name": "operator", "type": "address" }, { "internalType": "uint256", "name": "tokenId", "type": "uint256" }], "name": "approve", "outputs": [], "stateMutability": "payable", "type": "function" }, { "inputs": [{ "internalType": "address", "name": "owner", "type": "address" }], "name": "balanceOf", "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "baseURI", "outputs": [{ "internalType": "string", "name": "", "type": "string" }], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "currentStage", "outputs": [{ "internalType": "enum LYOT.SaleStage", "name": "", "type": "uint8" }], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "deleteDefaultRoyalty", "outputs": [], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [{ "internalType": "bytes32[]", "name": "_merkleProof", "type": "bytes32[]" }], "name": "frenMint", "outputs": [], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [], "name": "frenMintMerkleRoot", "outputs": [{ "internalType": "bytes32", "name": "", "type": "bytes32" }], "stateMutability": "view", "type": "function" }, { "inputs": [{ "internalType": "uint256", "name": "tokenId", "type": "uint256" }], "name": "getApproved", "outputs": [{ "internalType": "address", "name": "", "type": "address" }], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "getCurrentStage", "outputs": [{ "internalType": "uint8", "name": "", "type": "uint8" }], "stateMutability": "view", "type": "function" }, { "inputs": [{ "internalType": "address", "name": "owner", "type": "address" }, { "internalType": "address", "name": "operator", "type": "address" }], "name": "isApprovedForAll", "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }], "stateMutability": "view", "type": "function" }, { "inputs": [{ "internalType": "address", "name": "", "type": "address" }], "name": "isFrenMinted", "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "isPublicSaleActive", "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "isWhiteListActive", "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "lyot_multisig", "outputs": [{ "internalType": "address", "name": "", "type": "address" }], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "name", "outputs": [{ "internalType": "string", "name": "", "type": "string" }], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "operatorFilteringEnabled", "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "owner", "outputs": [{ "internalType": "address", "name": "", "type": "address" }], "stateMutability": "view", "type": "function" }, { "inputs": [{ "internalType": "uint256", "name": "tokenId", "type": "uint256" }], "name": "ownerOf", "outputs": [{ "internalType": "address", "name": "", "type": "address" }], "stateMutability": "view", "type": "function" }, { "inputs": [{ "internalType": "uint8", "name": "_amount", "type": "uint8" }], "name": "publicMint", "outputs": [], "stateMutability": "payable", "type": "function" }, { "inputs": [{ "internalType": "address", "name": "", "type": "address" }], "name": "publicMintAmount", "outputs": [{ "internalType": "uint8", "name": "", "type": "uint8" }], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "publicPrice", "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "renounceOwnership", "outputs": [], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [{ "internalType": "uint256", "name": "_tokenId", "type": "uint256" }, { "internalType": "uint256", "name": "_salePrice", "type": "uint256" }], "name": "royaltyInfo", "outputs": [{ "internalType": "address", "name": "", "type": "address" }, { "internalType": "uint256", "name": "", "type": "uint256" }], "stateMutability": "view", "type": "function" }, { "inputs": [{ "internalType": "address", "name": "from", "type": "address" }, { "internalType": "address", "name": "to", "type": "address" }, { "internalType": "uint256", "name": "tokenId", "type": "uint256" }], "name": "safeTransferFrom", "outputs": [], "stateMutability": "payable", "type": "function" }, { "inputs": [{ "internalType": "address", "name": "from", "type": "address" }, { "internalType": "address", "name": "to", "type": "address" }, { "internalType": "uint256", "name": "tokenId", "type": "uint256" }, { "internalType": "bytes", "name": "data", "type": "bytes" }], "name": "safeTransferFrom", "outputs": [], "stateMutability": "payable", "type": "function" }, { "inputs": [{ "internalType": "address", "name": "operator", "type": "address" }, { "internalType": "bool", "name": "approved", "type": "bool" }], "name": "setApprovalForAll", "outputs": [], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [{ "internalType": "string", "name": "_baseURI", "type": "string" }], "name": "setBaseURI", "outputs": [], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [{ "internalType": "address", "name": "receiver", "type": "address" }, { "internalType": "uint96", "name": "feeNumerator", "type": "uint96" }], "name": "setDefaultRoyalty", "outputs": [], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [{ "internalType": "bytes32", "name": "_root", "type": "bytes32" }], "name": "setFrenMintMerkleRoot", "outputs": [], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [{ "internalType": "bool", "name": "value", "type": "bool" }], "name": "setOperatorFilteringEnabled", "outputs": [], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [{ "internalType": "uint256", "name": "_price", "type": "uint256" }], "name": "setPublicPrice", "outputs": [], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [{ "internalType": "enum LYOT.SaleStage", "name": "_stage", "type": "uint8" }], "name": "setSaleStage", "outputs": [], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [{ "internalType": "bytes32", "name": "_root", "type": "bytes32" }], "name": "setWhiteListMerkleRoot", "outputs": [], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [{ "internalType": "uint256", "name": "_price", "type": "uint256" }], "name": "setWhiteListPrice", "outputs": [], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [{ "internalType": "bytes4", "name": "interfaceId", "type": "bytes4" }], "name": "supportsInterface", "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "symbol", "outputs": [{ "internalType": "string", "name": "", "type": "string" }], "stateMutability": "view", "type": "function" }, { "inputs": [{ "internalType": "uint256", "name": "_tokenId", "type": "uint256" }], "name": "tokenURI", "outputs": [{ "internalType": "string", "name": "", "type": "string" }], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "totalSupply", "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }], "stateMutability": "view", "type": "function" }, { "inputs": [{ "internalType": "address", "name": "from", "type": "address" }, { "internalType": "address", "name": "to", "type": "address" }, { "internalType": "uint256", "name": "tokenId", "type": "uint256" }], "name": "transferFrom", "outputs": [], "stateMutability": "payable", "type": "function" }, { "inputs": [{ "internalType": "address", "name": "newOwner", "type": "address" }], "name": "transferOwnership", "outputs": [], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [], "name": "whiteListMerkleRoot", "outputs": [{ "internalType": "bytes32", "name": "", "type": "bytes32" }], "stateMutability": "view", "type": "function" }, { "inputs": [{ "internalType": "uint8", "name": "_amount", "type": "uint8" }, { "internalType": "bytes32[]", "name": "_merkleProof", "type": "bytes32[]" }], "name": "whiteListMint", "outputs": [], "stateMutability": "payable", "type": "function" }, { "inputs": [], "name": "whiteListPrice", "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }], "stateMutability": "view", "type": "function" }, { "inputs": [{ "internalType": "address", "name": "", "type": "address" }], "name": "whitelistMintAmount", "outputs": [{ "internalType": "uint8", "name": "", "type": "uint8" }], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "withdraw", "outputs": [], "stateMutability": "nonpayable", "type": "function" }];
+var contractAddress = '0x4fdb559585124b0fd1b1374d70fffb42066a4005';
+var contractAbi = [{ "inputs": [{ "internalType": "address", "name": "_multisig", "type": "address" }, { "internalType": "bytes32", "name": "_frenlistRoot", "type": "bytes32" }, { "internalType": "bytes32", "name": "_whitelistRoot", "type": "bytes32" }], "stateMutability": "nonpayable", "type": "constructor" }, { "inputs": [], "name": "ApprovalCallerNotOwnerNorApproved", "type": "error" }, { "inputs": [], "name": "ApprovalQueryForNonexistentToken", "type": "error" }, { "inputs": [], "name": "BalanceQueryForZeroAddress", "type": "error" }, { "inputs": [], "name": "ContractNotAllow", "type": "error" }, { "inputs": [], "name": "FrenMinted", "type": "error" }, { "inputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }], "name": "InsufficientFunds", "type": "error" }, { "inputs": [], "name": "MaxMintReach", "type": "error" }, { "inputs": [], "name": "MaxSupplyReach", "type": "error" }, { "inputs": [], "name": "MintERC2309QuantityExceedsLimit", "type": "error" }, { "inputs": [], "name": "MintToZeroAddress", "type": "error" }, { "inputs": [], "name": "MintZeroQuantity", "type": "error" }, { "inputs": [{ "internalType": "uint8", "name": "", "type": "uint8" }], "name": "NotInList", "type": "error" }, { "inputs": [{ "internalType": "uint8", "name": "", "type": "uint8" }], "name": "NotInStage", "type": "error" }, { "inputs": [], "name": "OwnerQueryForNonexistentToken", "type": "error" }, { "inputs": [], "name": "OwnershipNotInitializedForExtraData", "type": "error" }, { "inputs": [], "name": "TransferCallerNotOwnerNorApproved", "type": "error" }, { "inputs": [], "name": "TransferFromIncorrectOwner", "type": "error" }, { "inputs": [], "name": "TransferToNonERC721ReceiverImplementer", "type": "error" }, { "inputs": [], "name": "TransferToZeroAddress", "type": "error" }, { "inputs": [], "name": "URIQueryForNonexistentToken", "type": "error" }, { "anonymous": false, "inputs": [{ "indexed": true, "internalType": "address", "name": "owner", "type": "address" }, { "indexed": true, "internalType": "address", "name": "approved", "type": "address" }, { "indexed": true, "internalType": "uint256", "name": "tokenId", "type": "uint256" }], "name": "Approval", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": true, "internalType": "address", "name": "owner", "type": "address" }, { "indexed": true, "internalType": "address", "name": "operator", "type": "address" }, { "indexed": false, "internalType": "bool", "name": "approved", "type": "bool" }], "name": "ApprovalForAll", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": true, "internalType": "uint256", "name": "fromTokenId", "type": "uint256" }, { "indexed": false, "internalType": "uint256", "name": "toTokenId", "type": "uint256" }, { "indexed": true, "internalType": "address", "name": "from", "type": "address" }, { "indexed": true, "internalType": "address", "name": "to", "type": "address" }], "name": "ConsecutiveTransfer", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": true, "internalType": "address", "name": "to", "type": "address" }, { "indexed": true, "internalType": "uint256", "name": "amount", "type": "uint256" }], "name": "Mint", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": true, "internalType": "address", "name": "previousOwner", "type": "address" }, { "indexed": true, "internalType": "address", "name": "newOwner", "type": "address" }], "name": "OwnershipTransferred", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": true, "internalType": "address", "name": "from", "type": "address" }, { "indexed": true, "internalType": "address", "name": "to", "type": "address" }, { "indexed": true, "internalType": "uint256", "name": "tokenId", "type": "uint256" }], "name": "Transfer", "type": "event" }, { "inputs": [], "name": "MAX_LIST_MINT", "outputs": [{ "internalType": "uint8", "name": "", "type": "uint8" }], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "MAX_PUBLIC_MINT", "outputs": [{ "internalType": "uint8", "name": "", "type": "uint8" }], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "MAX_SUPPLY", "outputs": [{ "internalType": "uint16", "name": "", "type": "uint16" }], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "TEAM_RESERVE", "outputs": [{ "internalType": "uint16", "name": "", "type": "uint16" }], "stateMutability": "view", "type": "function" }, { "inputs": [{ "internalType": "address[]", "name": "_to", "type": "address[]" }, { "internalType": "uint256", "name": "_amount", "type": "uint256" }], "name": "adminAirdrop", "outputs": [], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [{ "internalType": "address", "name": "operator", "type": "address" }, { "internalType": "uint256", "name": "tokenId", "type": "uint256" }], "name": "approve", "outputs": [], "stateMutability": "payable", "type": "function" }, { "inputs": [{ "internalType": "address", "name": "owner", "type": "address" }], "name": "balanceOf", "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "baseURI", "outputs": [{ "internalType": "string", "name": "", "type": "string" }], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "currentStage", "outputs": [{ "internalType": "enum LYOT.SaleStage", "name": "", "type": "uint8" }], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "deleteDefaultRoyalty", "outputs": [], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [{ "internalType": "bytes32[]", "name": "_merkleProof", "type": "bytes32[]" }], "name": "frenMint", "outputs": [], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [], "name": "frenMintMerkleRoot", "outputs": [{ "internalType": "bytes32", "name": "", "type": "bytes32" }], "stateMutability": "view", "type": "function" }, { "inputs": [{ "internalType": "uint256", "name": "tokenId", "type": "uint256" }], "name": "getApproved", "outputs": [{ "internalType": "address", "name": "", "type": "address" }], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "getCurrentStage", "outputs": [{ "internalType": "uint8", "name": "", "type": "uint8" }], "stateMutability": "view", "type": "function" }, { "inputs": [{ "internalType": "address", "name": "owner", "type": "address" }, { "internalType": "address", "name": "operator", "type": "address" }], "name": "isApprovedForAll", "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }], "stateMutability": "view", "type": "function" }, { "inputs": [{ "internalType": "address", "name": "", "type": "address" }], "name": "isFrenMinted", "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "isPublicSaleActive", "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "isWhiteListActive", "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "lyot_multisig", "outputs": [{ "internalType": "address", "name": "", "type": "address" }], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "name", "outputs": [{ "internalType": "string", "name": "", "type": "string" }], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "operatorFilteringEnabled", "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "owner", "outputs": [{ "internalType": "address", "name": "", "type": "address" }], "stateMutability": "view", "type": "function" }, { "inputs": [{ "internalType": "uint256", "name": "tokenId", "type": "uint256" }], "name": "ownerOf", "outputs": [{ "internalType": "address", "name": "", "type": "address" }], "stateMutability": "view", "type": "function" }, { "inputs": [{ "internalType": "uint8", "name": "_amount", "type": "uint8" }], "name": "publicMint", "outputs": [], "stateMutability": "payable", "type": "function" }, { "inputs": [{ "internalType": "address", "name": "", "type": "address" }], "name": "publicMintAmount", "outputs": [{ "internalType": "uint8", "name": "", "type": "uint8" }], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "publicPrice", "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "renounceOwnership", "outputs": [], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [{ "internalType": "uint256", "name": "_tokenId", "type": "uint256" }, { "internalType": "uint256", "name": "_salePrice", "type": "uint256" }], "name": "royaltyInfo", "outputs": [{ "internalType": "address", "name": "", "type": "address" }, { "internalType": "uint256", "name": "", "type": "uint256" }], "stateMutability": "view", "type": "function" }, { "inputs": [{ "internalType": "address", "name": "from", "type": "address" }, { "internalType": "address", "name": "to", "type": "address" }, { "internalType": "uint256", "name": "tokenId", "type": "uint256" }], "name": "safeTransferFrom", "outputs": [], "stateMutability": "payable", "type": "function" }, { "inputs": [{ "internalType": "address", "name": "from", "type": "address" }, { "internalType": "address", "name": "to", "type": "address" }, { "internalType": "uint256", "name": "tokenId", "type": "uint256" }, { "internalType": "bytes", "name": "data", "type": "bytes" }], "name": "safeTransferFrom", "outputs": [], "stateMutability": "payable", "type": "function" }, { "inputs": [{ "internalType": "address", "name": "operator", "type": "address" }, { "internalType": "bool", "name": "approved", "type": "bool" }], "name": "setApprovalForAll", "outputs": [], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [{ "internalType": "string", "name": "_baseURI", "type": "string" }], "name": "setBaseURI", "outputs": [], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [{ "internalType": "address", "name": "receiver", "type": "address" }, { "internalType": "uint96", "name": "feeNumerator", "type": "uint96" }], "name": "setDefaultRoyalty", "outputs": [], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [{ "internalType": "bytes32", "name": "_root", "type": "bytes32" }], "name": "setFrenMintMerkleRoot", "outputs": [], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [{ "internalType": "bool", "name": "value", "type": "bool" }], "name": "setOperatorFilteringEnabled", "outputs": [], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [{ "internalType": "uint256", "name": "_price", "type": "uint256" }], "name": "setPublicPrice", "outputs": [], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [{ "internalType": "enum LYOT.SaleStage", "name": "_stage", "type": "uint8" }], "name": "setSaleStage", "outputs": [], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [{ "internalType": "bytes32", "name": "_root", "type": "bytes32" }], "name": "setWhiteListMerkleRoot", "outputs": [], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [{ "internalType": "uint256", "name": "_price", "type": "uint256" }], "name": "setWhiteListPrice", "outputs": [], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [{ "internalType": "bytes4", "name": "interfaceId", "type": "bytes4" }], "name": "supportsInterface", "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "symbol", "outputs": [{ "internalType": "string", "name": "", "type": "string" }], "stateMutability": "view", "type": "function" }, { "inputs": [{ "internalType": "uint256", "name": "_tokenId", "type": "uint256" }], "name": "tokenURI", "outputs": [{ "internalType": "string", "name": "", "type": "string" }], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "totalSupply", "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }], "stateMutability": "view", "type": "function" }, { "inputs": [{ "internalType": "address", "name": "from", "type": "address" }, { "internalType": "address", "name": "to", "type": "address" }, { "internalType": "uint256", "name": "tokenId", "type": "uint256" }], "name": "transferFrom", "outputs": [], "stateMutability": "payable", "type": "function" }, { "inputs": [{ "internalType": "address", "name": "newOwner", "type": "address" }], "name": "transferOwnership", "outputs": [], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [], "name": "whiteListMerkleRoot", "outputs": [{ "internalType": "bytes32", "name": "", "type": "bytes32" }], "stateMutability": "view", "type": "function" }, { "inputs": [{ "internalType": "uint8", "name": "_amount", "type": "uint8" }, { "internalType": "bytes32[]", "name": "_merkleProof", "type": "bytes32[]" }], "name": "whiteListMint", "outputs": [], "stateMutability": "payable", "type": "function" }, { "inputs": [], "name": "whiteListPrice", "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }], "stateMutability": "view", "type": "function" }, { "inputs": [{ "internalType": "address", "name": "", "type": "address" }], "name": "whitelistMintAmount", "outputs": [{ "internalType": "uint8", "name": "", "type": "uint8" }], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "withdraw", "outputs": [], "stateMutability": "nonpayable", "type": "function" }];
 // EXTERNAL MODULE: ./src/components/pages/mint/index.scss
 var mint = __webpack_require__("W/cc");
 var mint_default = /*#__PURE__*/__webpack_require__.n(mint);
@@ -30935,8 +30935,26 @@ var _name$components$data;
             _this.isDialog = false;
         }, 5000);
     },
-    connectWallet: function connectWallet() {
+    getInfo: function getInfo() {
         var _this2 = this;
+
+        lib_axios.get("https://api.luckyyear.club/" + 'api?address=' + this.ethereumAddress).then(function (res) {
+            if (res.status == 200 && res.data.code == 200) {
+                _this2.inFrenList = res.data.data.inFrenList;
+                _this2.inWhiteList = res.data.data.inWhiteList;
+                if (_this2.currentPhase == 1 && res.data.data.whiteListProof) {
+                    _this2.whiteListProof = res.data.data.whiteListProof;
+                } else if (_this2.currentPhase == 0 && res.data.data.frenListProof) {
+                    _this2.frenListProof = res.data.data.frenListProof;
+                }
+                _this2.isLoading = false;
+                _this2.showDialog();
+                _this2.isConnectWallet = false;
+            }
+        });
+    },
+    connectWallet: function connectWallet() {
+        var _this3 = this;
 
         return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee() {
             var provider, signer, address;
@@ -30944,7 +30962,7 @@ var _name$components$data;
                 while (1) {
                     switch (_context.prev = _context.next) {
                         case 0:
-                            _this2.isLoading = true;
+                            _this3.isLoading = true;
 
                             if (!window.ethereum) {
                                 _context.next = 13;
@@ -30964,38 +30982,25 @@ var _name$components$data;
                         case 8:
                             address = _context.sent;
 
-                            _this2.ethereumAddress = address;
-                            lib_axios.get("https://api.luckyyear.club/" + 'api?address=' + address).then(function (res) {
-                                if (res.status == 200 && res.data.code == 200) {
-                                    _this2.inFrenList = res.data.data.inFrenList;
-                                    _this2.inWhiteList = res.data.data.inWhiteList;
-                                    if (_this2.currentPhase == 1 && res.data.data.whiteListProof) {
-                                        _this2.whiteListProof = res.data.data.whiteListProof;
-                                    } else if (_this2.currentPhase == 0 && res.data.data.frenListProof) {
-                                        _this2.frenListProof = res.data.data.frenListProof;
-                                    }
-                                    _this2.isLoading = false;
-                                    _this2.showDialog();
-                                    _this2.isConnectWallet = false;
-                                }
-                            });
+                            _this3.ethereumAddress = address;
+                            _this3.getInfo(address);
                             _context.next = 15;
                             break;
 
                         case 13:
-                            _this2.isLoading = false;
-                            _this2.$swal('MetaMask not detected');
+                            _this3.isLoading = false;
+                            _this3.$swal('MetaMask not detected');
 
                         case 15:
                         case 'end':
                             return _context.stop();
                     }
                 }
-            }, _callee, _this2);
+            }, _callee, _this3);
         }))();
     },
     init: function init() {
-        var _this3 = this;
+        var _this4 = this;
 
         return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee2() {
             var accounts, networkId;
@@ -31003,14 +31008,14 @@ var _name$components$data;
                 while (1) {
                     switch (_context2.prev = _context2.next) {
                         case 0:
-                            _this3.isRequest = false;
+                            _this4.isRequest = false;
 
                             if (!(window.ethereum === 'undefined')) {
                                 _context2.next = 4;
                                 break;
                             }
 
-                            _this3.$swal('请安装 MetaMask 扩展程序');
+                            _this4.$swal('请安装 MetaMask 扩展程序');
                             return _context2.abrupt('return');
 
                         case 4:
@@ -31021,7 +31026,9 @@ var _name$components$data;
                             accounts = _context2.sent;
 
                             if (accounts.length === 0) {
-                                _this3.isConnectWallet = true;
+                                _this4.isConnectWallet = true;
+                            } else {
+                                _this4.ethereumAddress = accounts[0];
                             }
 
                             _context2.next = 10;
@@ -31043,7 +31050,7 @@ var _name$components$data;
                             });
 
                         case 15:
-                            _this3.getTreatyInfo();
+                            _this4.getTreatyInfo();
                             _context2.next = 21;
                             break;
 
@@ -31051,25 +31058,25 @@ var _name$components$data;
                             _context2.prev = 18;
                             _context2.t0 = _context2['catch'](12);
 
-                            _this3.$swal('Please switch to the mainnet');
+                            _this4.$swal('Please switch to the mainnet');
 
                         case 21:
                             _context2.next = 24;
                             break;
 
                         case 23:
-                            _this3.getTreatyInfo();
+                            _this4.getTreatyInfo();
 
                         case 24:
                         case 'end':
                             return _context2.stop();
                     }
                 }
-            }, _callee2, _this3, [[12, 18]]);
+            }, _callee2, _this4, [[12, 18]]);
         }))();
     },
     getTreatyInfo: function getTreatyInfo() {
-        var _this4 = this;
+        var _this5 = this;
 
         var rpc = "https://goerli.infura.io/v3/0260453284fb4be8abb9815c5c116726";
         var provider = new ethers_namespaceObject.providers.JsonRpcProvider(rpc);
@@ -31077,29 +31084,30 @@ var _name$components$data;
         var promises = [contract.totalSupply(), contract.currentStage(), contract.whiteListPrice(), contract.publicPrice()];
         this.isLoading = true;
         promise_default.a.all(promises).then(function (results) {
-            _this4.totalSupply = results[0];
+            _this5.totalSupply = results[0];
             var currentPhase = results[1];
-            _this4.currentPhase = currentPhase;
+            _this5.currentPhase = currentPhase;
+            _this5.getInfo(_this5.ethereumAddress);
             if (currentPhase == 0) {
-                _this4.num = 2;
-                _this4.mintPrice = 0;
+                _this5.num = 2;
+                _this5.mintPrice = 0;
             } else {
-                _this4.num = 5;
+                _this5.num = 5;
                 if (currentPhase == 1) {
-                    _this4.mintPrice = ethers_namespaceObject.utils.formatEther(results[2]);
+                    _this5.mintPrice = ethers_namespaceObject.utils.formatEther(results[2]);
                 } else {
-                    _this4.mintPrice = ethers_namespaceObject.utils.formatEther(results[3]);
+                    _this5.mintPrice = ethers_namespaceObject.utils.formatEther(results[3]);
                 }
             }
-            _this4.isLoading = false;
-            _this4.isRequest = true;
+            _this5.isLoading = false;
+            _this5.isRequest = true;
         }).catch(function (error) {
-            _this4.isLoading = false;
-            _this4.$swal(error.message || error);
+            _this5.isLoading = false;
+            _this5.$swal(error.message || error);
         });
     },
     buyMint: function buyMint() {
-        var _this5 = this;
+        var _this6 = this;
 
         return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee3() {
             var provider, signer, contract, amount, transaction;
@@ -31107,7 +31115,7 @@ var _name$components$data;
                 while (1) {
                     switch (_context3.prev = _context3.next) {
                         case 0:
-                            _this5.isLoading = true;
+                            _this6.isLoading = true;
                             _context3.prev = 1;
                             provider = new ethers_namespaceObject.providers.Web3Provider(window.ethereum);
                             _context3.next = 5;
@@ -31117,15 +31125,15 @@ var _name$components$data;
                             // Request user's permission to access their Metamask account
                             signer = provider.getSigner();
                             contract = new ethers_namespaceObject.Contract(contractAddress, contractAbi, signer);
-                            amount = ethers_namespaceObject.utils.parseEther((_this5.num * _this5.mintPrice).toString());
+                            amount = ethers_namespaceObject.utils.parseEther((_this6.num * _this6.mintPrice).toString());
 
-                            if (!(_this5.currentPhase == 1)) {
+                            if (!(_this6.currentPhase == 1)) {
                                 _context3.next = 14;
                                 break;
                             }
 
                             _context3.next = 11;
-                            return contract.whiteListMint(1, _this5.whiteListProof, { value: amount });
+                            return contract.whiteListMint(_this6.num, _this6.whiteListProof, { value: amount });
 
                         case 11:
                             transaction = _context3.sent;
@@ -31133,13 +31141,13 @@ var _name$components$data;
                             break;
 
                         case 14:
-                            if (!(_this5.currentPhase == 0)) {
+                            if (!(_this6.currentPhase == 0)) {
                                 _context3.next = 20;
                                 break;
                             }
 
                             _context3.next = 17;
-                            return contract.frenMint(_this5.frenListProof);
+                            return contract.frenMint(_this6.frenListProof);
 
                         case 17:
                             transaction = _context3.sent;
@@ -31148,7 +31156,7 @@ var _name$components$data;
 
                         case 20:
                             _context3.next = 22;
-                            return contract.publicMint(1, { value: amount });
+                            return contract.publicMint(_this6.num, { value: amount });
 
                         case 22:
                             transaction = _context3.sent;
@@ -31158,26 +31166,31 @@ var _name$components$data;
                             return transaction.wait();
 
                         case 25:
-                            _this5.isLoading = false;
-                            _this5.isSuccess = true;
-                            _this5.showDialog();
-                            _context3.next = 35;
+                            _this6.isLoading = false;
+                            _this6.isSuccess = true;
+                            _context3.next = 29;
+                            return contract.totalSupply();
+
+                        case 29:
+                            _this6.totalSupply = _context3.sent;
+
+                            _this6.showDialog();
+                            _context3.next = 37;
                             break;
 
-                        case 30:
-                            _context3.prev = 30;
+                        case 33:
+                            _context3.prev = 33;
                             _context3.t0 = _context3['catch'](1);
 
-                            _this5.isLoading = false;
-                            console.log(_context3.t0.message);
-                            _this5.$swal('insufficient funds');
+                            _this6.isLoading = false;
+                            _this6.$swal('Transaction Failure');
 
-                        case 35:
+                        case 37:
                         case 'end':
                             return _context3.stop();
                     }
                 }
-            }, _callee3, _this5, [[1, 30]]);
+            }, _callee3, _this6, [[1, 33]]);
         }))();
     },
     hanlerNum: function hanlerNum(num) {
@@ -31204,7 +31217,7 @@ var _name$components$data;
         }
     }
 }), _name$components$data);
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-baec13b8","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./src/components/pages/mint/index.vue
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-dc163d42","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./src/components/pages/mint/index.vue
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticStyle:{"padding-top":".5rem"},attrs:{"calss":"mint_page"}},[_c('div',{staticClass:"content_c"},[(_vm.isConnectWallet)?_c('div',{staticClass:"btn",on:{"click":_vm.connectWallet}},[_c('img',{attrs:{"src":__webpack_require__("+wVD")}})]):_vm._e(),_vm._v(" "),(_vm.isRequest && _vm.totalSupply > 0)?_c('div',{staticClass:"text"},[(!_vm.isConnectWallet && ((_vm.currentPhase == 0 && _vm.inFrenList) || (_vm.currentPhase == 1 && _vm.inWhiteList) || _vm.currentPhase == 2))?_c('div',{staticClass:"handle"},[_c('img',{staticClass:"subtract icon",attrs:{"src":__webpack_require__("EII3")},on:{"click":function($event){return _vm.hanlerNum(0)}}}),_vm._v(" "),_c('span',{staticClass:"num"},[_vm._v(_vm._s(_vm.num))]),_vm._v(" "),_c('img',{staticClass:"add icon",attrs:{"src":__webpack_require__("lQd5")},on:{"click":function($event){return _vm.hanlerNum(1)}}}),_vm._v(" "),_c('div',{staticClass:"mintBtn",on:{"click":_vm.buyMint}},[_c('img',{attrs:{"src":_vm.mintBtn}})])]):_vm._e(),_vm._v(" "),_c('div',{staticClass:"n"},[_vm._v("\n              MINT PRICE:"+_vm._s(_vm.mintPrice)+"ETH    "+_vm._s(_vm.totalSupply)+"/2022MINTED\n          ")])]):_vm._e(),_vm._v(" "),(_vm.isRequest && _vm.totalSupply == 0)?_c('div',{staticClass:"text soldout"},[_vm._v("\n          SOLD OUT!\n      ")]):_vm._e(),_vm._v(" "),(!_vm.isDialog)?_c('div',{staticClass:"qp"},[_c('img',{attrs:{"src":__webpack_require__("5aFt")}})]):_c('div',{staticClass:"dialog"},[(_vm.isSuccess)?_c('div',[_c('img',{staticClass:"d",attrs:{"src":__webpack_require__("HVnn")}})]):(_vm.currentPhase == 0)?_c('div',[(_vm.inFrenList)?_c('img',{staticClass:"d",attrs:{"src":__webpack_require__("5H6C")}}):_c('img',{staticClass:"d",attrs:{"src":__webpack_require__("53dc")}})]):_c('div',[(_vm.inWhiteList)?_c('img',{staticClass:"d",attrs:{"src":__webpack_require__("fdVw")}}):_c('img',{staticClass:"d",attrs:{"src":__webpack_require__("3SAf")}})])]),_vm._v(" "),_c('div',{staticClass:"bottom"},[_c('div',{staticClass:"t1 t container_words"},[_c('vue-seamless-scroll',{staticClass:"seamless-warp",attrs:{"data":_vm.newsList,"class-option":_vm.classOption}},[_c('ul',{staticClass:"item"},_vm._l((_vm.newsList),function(item){return _c('li',[_vm._v(_vm._s(item.title))])}),0)])],1),_vm._v(" "),_c('div',{staticClass:"t2 t container_big"},[_c('vue-seamless-scroll',{staticClass:"seamless-warp",attrs:{"data":_vm.newsList1,"class-option":_vm.classOption1}},[_c('ul',{staticClass:"item"},_vm._l((_vm.newsList1),function(item){return _c('li',[_vm._v(_vm._s(item.title))])}),0)])],1),_vm._v(" "),_c('div',{staticClass:"t3 t container_words"},[_c('vue-seamless-scroll',{staticClass:"seamless-warp",attrs:{"data":_vm.newsList,"class-option":_vm.classOption}},[_c('ul',{staticClass:"item"},_vm._l((_vm.newsList),function(item){return _c('li',[_vm._v(_vm._s(item.title))])}),0)])],1),_vm._v(" "),_c('img',{staticClass:"tiggy",attrs:{"src":__webpack_require__("rXwA")}})]),_vm._v(" "),(_vm.isLoading)?_c('div',{staticClass:"loading_"},[_vm._m(0)]):_vm._e()])])}
 var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{attrs:{"id":"preloader_4"}},[_c('span'),_vm._v(" "),_c('span'),_vm._v(" "),_c('span'),_vm._v(" "),_c('span'),_vm._v(" "),_c('span')])}]
 var esExports = { render: render, staticRenderFns: staticRenderFns }
@@ -32920,4 +32933,4 @@ __webpack_require__("vIB/")(String, 'String', function (iterated) {
 /***/ })
 
 });
-//# sourceMappingURL=0.41dd3d53329f4e9c619a.js.map
+//# sourceMappingURL=0.16b41d6c0955ae4a4438.js.map
