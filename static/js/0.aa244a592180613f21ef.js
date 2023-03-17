@@ -30886,6 +30886,7 @@ var _name$components$data;
     */
     data: function data() {
         return {
+            activeNetwork: 5,
             mintBtn: __webpack_require__("a425"),
             newsList: [{ title: 'LUCKY YEAR OF TIGER' }, { title: 'LUCKY YEAR OF TIGER' }, { title: 'LUCKY YEAR OF TIGER' }],
             newsList1: [{ title: 'LYOT LYOT LYOT LYOT' }, { title: 'LYOT LYOT LYOT LYOT' }, { title: 'LYOT LYOT LYOT LYOT' }, { title: 'LYOT LYOT LYOT LYOT' }],
@@ -31037,7 +31038,7 @@ var _name$components$data;
                         case 10:
                             networkId = _context2.sent;
 
-                            if (!(networkId !== '5')) {
+                            if (!(networkId !== _this4.activeNetwork)) {
                                 _context2.next = 23;
                                 break;
                             }
@@ -31046,7 +31047,7 @@ var _name$components$data;
                             _context2.next = 15;
                             return window.ethereum.request({
                                 method: 'wallet_switchEthereumChain',
-                                params: [{ chainId: '0x1' }]
+                                params: [{ chainId: '0x5' }]
                             });
 
                         case 15:
@@ -31217,7 +31218,7 @@ var _name$components$data;
         }
     }
 }), _name$components$data);
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-dc163d42","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./src/components/pages/mint/index.vue
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-834f212a","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./src/components/pages/mint/index.vue
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticStyle:{"padding-top":".5rem"},attrs:{"calss":"mint_page"}},[_c('div',{staticClass:"content_c"},[(_vm.isConnectWallet)?_c('div',{staticClass:"btn",on:{"click":_vm.connectWallet}},[_c('img',{attrs:{"src":__webpack_require__("+wVD")}})]):_vm._e(),_vm._v(" "),(_vm.isRequest && _vm.totalSupply > 0)?_c('div',{staticClass:"text"},[(!_vm.isConnectWallet && ((_vm.currentPhase == 0 && _vm.inFrenList) || (_vm.currentPhase == 1 && _vm.inWhiteList) || _vm.currentPhase == 2))?_c('div',{staticClass:"handle"},[_c('img',{staticClass:"subtract icon",attrs:{"src":__webpack_require__("EII3")},on:{"click":function($event){return _vm.hanlerNum(0)}}}),_vm._v(" "),_c('span',{staticClass:"num"},[_vm._v(_vm._s(_vm.num))]),_vm._v(" "),_c('img',{staticClass:"add icon",attrs:{"src":__webpack_require__("lQd5")},on:{"click":function($event){return _vm.hanlerNum(1)}}}),_vm._v(" "),_c('div',{staticClass:"mintBtn",on:{"click":_vm.buyMint}},[_c('img',{attrs:{"src":_vm.mintBtn}})])]):_vm._e(),_vm._v(" "),_c('div',{staticClass:"n"},[_vm._v("\n              MINT PRICE:"+_vm._s(_vm.mintPrice)+"ETH    "+_vm._s(_vm.totalSupply)+"/2022MINTED\n          ")])]):_vm._e(),_vm._v(" "),(_vm.isRequest && _vm.totalSupply == 0)?_c('div',{staticClass:"text soldout"},[_vm._v("\n          SOLD OUT!\n      ")]):_vm._e(),_vm._v(" "),(!_vm.isDialog)?_c('div',{staticClass:"qp"},[_c('img',{attrs:{"src":__webpack_require__("5aFt")}})]):_c('div',{staticClass:"dialog"},[(_vm.isSuccess)?_c('div',[_c('img',{staticClass:"d",attrs:{"src":__webpack_require__("HVnn")}})]):(_vm.currentPhase == 0)?_c('div',[(_vm.inFrenList)?_c('img',{staticClass:"d",attrs:{"src":__webpack_require__("5H6C")}}):_c('img',{staticClass:"d",attrs:{"src":__webpack_require__("53dc")}})]):_c('div',[(_vm.inWhiteList)?_c('img',{staticClass:"d",attrs:{"src":__webpack_require__("fdVw")}}):_c('img',{staticClass:"d",attrs:{"src":__webpack_require__("3SAf")}})])]),_vm._v(" "),_c('div',{staticClass:"bottom"},[_c('div',{staticClass:"t1 t container_words"},[_c('vue-seamless-scroll',{staticClass:"seamless-warp",attrs:{"data":_vm.newsList,"class-option":_vm.classOption}},[_c('ul',{staticClass:"item"},_vm._l((_vm.newsList),function(item){return _c('li',[_vm._v(_vm._s(item.title))])}),0)])],1),_vm._v(" "),_c('div',{staticClass:"t2 t container_big"},[_c('vue-seamless-scroll',{staticClass:"seamless-warp",attrs:{"data":_vm.newsList1,"class-option":_vm.classOption1}},[_c('ul',{staticClass:"item"},_vm._l((_vm.newsList1),function(item){return _c('li',[_vm._v(_vm._s(item.title))])}),0)])],1),_vm._v(" "),_c('div',{staticClass:"t3 t container_words"},[_c('vue-seamless-scroll',{staticClass:"seamless-warp",attrs:{"data":_vm.newsList,"class-option":_vm.classOption}},[_c('ul',{staticClass:"item"},_vm._l((_vm.newsList),function(item){return _c('li',[_vm._v(_vm._s(item.title))])}),0)])],1),_vm._v(" "),_c('img',{staticClass:"tiggy",attrs:{"src":__webpack_require__("rXwA")}})]),_vm._v(" "),(_vm.isLoading)?_c('div',{staticClass:"loading_"},[_vm._m(0)]):_vm._e()])])}
 var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{attrs:{"id":"preloader_4"}},[_c('span'),_vm._v(" "),_c('span'),_vm._v(" "),_c('span'),_vm._v(" "),_c('span'),_vm._v(" "),_c('span')])}]
 var esExports = { render: render, staticRenderFns: staticRenderFns }
@@ -32933,4 +32934,4 @@ __webpack_require__("vIB/")(String, 'String', function (iterated) {
 /***/ })
 
 });
-//# sourceMappingURL=0.16b41d6c0955ae4a4438.js.map
+//# sourceMappingURL=0.aa244a592180613f21ef.js.map
